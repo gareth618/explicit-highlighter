@@ -1,0 +1,67 @@
+{
+  "[list]": {
+    "prefix": ["[+list]"],
+    "body": ["[+list]", "  $0", "[-list]"],
+    "description": "[list] snippet"
+  },
+  "[item]": {
+    "prefix": ["[+item]"],
+    "body": ["[+item]$0[-item]"],
+    "description": "[item] snippet"
+  },
+  "[variants]": {
+    "prefix": ["[+variants]"],
+    "body": ["[+variants]", "  $0", "[-variants]"],
+    "description": "[variants] snippet"
+  },
+  "[quote]": {
+    "prefix": ["[+quote]"],
+    "body": ["[+quote]", "  $0", "[-quote]"],
+    "description": "[quote] snippet"
+  },
+  "[spoiler]": {
+    "prefix": ["[+spoiler]"],
+    "body": ["[+spoiler]", "  $0", "[-spoiler]"],
+    "description": "[spoiler] snippet"
+  },
+  "[center]": {
+    "prefix": ["[+center]"],
+    "body": ["[+center]", "  $0", "[-center]"],
+    "description": "[center] snippet"
+  },
+  "[right]": {
+    "prefix": ["[+right]"],
+    "body": ["[+right]", "  $0", "[-right]"],
+    "description": "[right] snippet"
+  },
+  "[code]": {
+    "prefix": ["[+code]"],
+    "body": ["[+code]", "  $0", "[-code]"],
+    "description": "[code] snippet"
+  },
+  "[table]": {
+    "prefix": ["[+table]"],
+    "body": ["[+table]", "  $0", "[-table]"],
+    "description": "[table] snippet"
+  },
+  "<table>": {
+    "prefix": ["<table>"],
+    "body": ["<table>", "  $0", "</table>"],
+    "description": "<table> snippet"
+  },
+  "<tr>": {
+    "prefix": ["<tr>"],
+    "body": ["<tr>", "  $0", "</tr>"],
+    "description": "<tr> snippet"
+  },
+  "<th>": {
+    "prefix": ["<th>"],
+    "body": ["<th>$0</th>"],
+    "description": "<th> snippet"
+  },
+  "<td>": {
+    "prefix": ["<td>"],
+    "body": ["<td>$0</td>"],
+    "description": "<td> snippet"
+  }
+}

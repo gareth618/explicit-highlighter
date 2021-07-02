@@ -1,0 +1,348 @@
+{
+	"name": "Explicit",
+	"scopeName": "source.exp",
+	"patterns": [
+		{ "include": "#leafs" },
+		{ "include": "#spans" },
+		{ "include": "#display" },
+		{ "include": "#tags" },
+		{ "include": "#html" }
+	],
+	"repository": {
+		"leafs": {
+			"patterns": [
+				{ "name": "support.class.leafs.code.exp", "match": "`(?:(?!`).)*`" },
+				{ "name": "support.class.leafs.kbrd.exp", "match": ";(?=\\S)(?:(?!;)(?!`).)*(?<=\\S);" },
+				{ "name": "support.class.leafs.emoj.exp", "match": ":(?=\\S)(?:(?!:)(?!`)(?!;).)*(?<=\\S):" },
+				{
+					"begin": "\\$\\$?(?=\\S)",
+					"end": "(?<=\\S)\\$?\\$",
+					"beginCaptures": {
+						"0": { "name": "support.class.leafs.math.open.exp" }
+					},
+					"endCaptures": {
+						"0": { "name": "support.class.leafs.math.close.exp" }
+					},
+					"name": "meta.embedded.block.katex",
+          "patterns": [{ "include": "source.katex" }]
+				},
+				{ "name": "comment.leafs.nwln.exp", "match": "<br>$" },
+				{ "name": "support.class.leafs.link.exp", "match": "\\[.+\\]\\(.*\\.(?=[A-Za-z0-9]).*\\)(TODO)?" }
+			]
+		},
+		"spans": {
+			"patterns": [
+				{
+					"begin": "\\*\\*(?=\\S)",
+					"end": "(?<=\\S)\\*\\*",
+					"beginCaptures": {
+						"0": { "name": "variable.spans.bold.open.exp" }
+					},
+					"endCaptures": {
+						"0": { "name": "variable.spans.bold.close.exp" }
+					},
+					"name": "variable.spans.bold.exp",
+          "patterns": [{ "include": "#leafs" }]
+				},
+				{
+					"begin": "__(?=\\S)",
+					"end": "(?<=\\S)__",
+					"beginCaptures": {
+						"0": { "name": "variable.spans.undr.open.exp" }
+					},
+					"endCaptures": {
+						"0": { "name": "variable.spans.undr.close.exp" }
+					},
+					"name": "variable.spans.undr.exp",
+          "patterns": [{ "include": "#leafs" }]
+				},
+				{
+					"begin": "~~(?=\\S)",
+					"end": "(?<=\\S)~~",
+					"beginCaptures": {
+						"0": { "name": "variable.spans.strk.open.exp" }
+					},
+					"endCaptures": {
+						"0": { "name": "variable.spans.strk.close.exp" }
+					},
+					"name": "variable.spans.strk.exp",
+          "patterns": [{ "include": "#leafs" }]
+				},
+				{
+					"begin": "\\^\\^(?=\\S)",
+					"end": "(?<=\\S)\\^\\^",
+					"beginCaptures": {
+						"0": { "name": "variable.spans.blue.open.exp" }
+					},
+					"endCaptures": {
+						"0": { "name": "variable.spans.blue.close.exp" }
+					},
+					"name": "variable.spans.blue.exp",
+          "patterns": [{ "include": "#leafs" }]
+				}
+			]
+		},
+		"display": {
+			"patterns": [
+				{ "name": "support.class.title.exp", "match": "^#{2,6} " },
+				{ "name": "support.class.media.exp", "match": "^\\!\\[.+\\]\\(.*\\)$" }
+			]
+		},
+		"tags": {
+			"patterns": [
+				{
+					"begin": "(\\[\\+list\\])(\\(.*\\))?",
+					"end": "\\[\\-list\\]",
+					"beginCaptures": {
+						"1": { "name": "keyword.control.tag.list.open.exp" },
+						"2": { "name": "string.tag.list.args.exp" }
+					},
+					"endCaptures": {
+						"0": { "name": "keyword.control.tag.list.close.exp" }
+					},
+					"name": "tag.list.exp",
+					"patterns": [{ "include": "source.exp" }]
+				},
+				{
+					"begin": "(\\[\\+item\\])(\\(.*\\))?",
+					"end": "\\[\\-item\\]",
+					"beginCaptures": {
+						"1": { "name": "keyword.control.tag.item.open.exp" },
+						"2": { "name": "string.tag.item.args.exp" }
+					},
+					"endCaptures": {
+						"0": { "name": "keyword.control.tag.item.close.exp" }
+					},
+					"name": "tag.item.exp",
+					"patterns": [{ "include": "source.exp" }]
+				},
+				{
+					"begin": "\\[\\+variants\\]",
+					"end": "\\[\\-variants\\]",
+					"beginCaptures": {
+						"0": { "name": "keyword.control.tag.variants.open.exp" }
+					},
+					"endCaptures": {
+						"0": { "name": "keyword.control.tag.variants.close.exp" }
+					},
+					"name": "tag.variants.exp",
+					"patterns": [{ "include": "source.exp" }]
+				},
+				{
+					"begin": "\\[\\+quote\\]",
+					"end": "\\[\\-quote\\]",
+					"beginCaptures": {
+						"0": { "name": "keyword.control.tag.quote.open.exp" }
+					},
+					"endCaptures": {
+						"0": { "name": "keyword.control.tag.quote.close.exp" }
+					},
+					"name": "tag.quote.exp",
+					"patterns": [{ "include": "source.exp" }]
+				},
+				{
+					"begin": "\\[\\+spoiler\\]",
+					"end": "\\[\\-spoiler\\]",
+					"beginCaptures": {
+						"0": { "name": "keyword.control.tag.spoiler.open.exp" }
+					},
+					"endCaptures": {
+						"0": { "name": "keyword.control.tag.spoiler.close.exp" }
+					},
+					"name": "tag.spoiler.exp",
+					"patterns": [{ "include": "source.exp" }]
+				},
+				{
+					"begin": "\\[\\+center\\]",
+					"end": "\\[\\-center\\]",
+					"beginCaptures": {
+						"0": { "name": "keyword.control.tag.center.open.exp" }
+					},
+					"endCaptures": {
+						"0": { "name": "keyword.control.tag.center.close.exp" }
+					},
+					"name": "tag.center.exp",
+					"patterns": [{ "include": "source.exp" }]
+				},
+				{
+					"begin": "\\[\\+right\\]",
+					"end": "\\[\\-right\\]",
+					"beginCaptures": {
+						"0": { "name": "keyword.control.tag.right.open.exp" }
+					},
+					"endCaptures": {
+						"0": { "name": "keyword.control.tag.right.close.exp" }
+					},
+					"name": "tag.right.exp",
+					"patterns": [{ "include": "source.exp" }]
+				},
+				{
+					"begin": "\\[\\+code\\](?!\\()",
+					"end": "\\[\\-code\\]",
+					"beginCaptures": {
+						"0": { "name": "keyword.control.tag.code.cpp.open.exp" }
+					},
+					"endCaptures": {
+						"0": { "name": "keyword.control.tag.code.cpp.close.exp" }
+					},
+					"name": "meta.embedded.block.noname"
+				},
+				{
+					"begin": "(\\[\\+code\\])(\\(.*lang: cpp.*\\))",
+					"end": "\\[\\-code\\]",
+					"beginCaptures": {
+						"1": { "name": "keyword.control.tag.code.cpp.open.exp" },
+						"2": { "name": "string.tag.code.cpp.args.exp" }
+					},
+					"endCaptures": {
+						"0": { "name": "keyword.control.tag.code.cpp.close.exp" }
+					},
+					"name": "meta.embedded.block.cpp",
+					"patterns": [{ "include": "source.cpp" }]
+				},
+				{
+					"begin": "(\\[\\+code\\])(\\(.*lang: c.*\\))",
+					"end": "\\[\\-code\\]",
+					"beginCaptures": {
+						"1": { "name": "keyword.control.tag.code.c.open.exp" },
+						"2": { "name": "string.tag.code.c.args.exp" }
+					},
+					"endCaptures": {
+						"0": { "name": "keyword.control.tag.code.c.close.exp" }
+					},
+					"name": "meta.embedded.block.c",
+					"patterns": [{ "include": "source.c" }]
+				},
+				{
+					"begin": "(\\[\\+code\\])(\\(.*lang: java.*\\))",
+					"end": "\\[\\-code\\]",
+					"beginCaptures": {
+						"1": { "name": "keyword.control.tag.code.java.open.exp" },
+						"2": { "name": "string.tag.code.java.args.exp" }
+					},
+					"endCaptures": {
+						"0": { "name": "keyword.control.tag.code.java.close.exp" }
+					},
+					"name": "meta.embedded.block.java",
+					"patterns": [{ "include": "source.java" }]
+				},
+				{
+					"begin": "(\\[\\+code\\])(\\(.*lang: python.*\\))",
+					"end": "\\[\\-code\\]",
+					"beginCaptures": {
+						"1": { "name": "keyword.control.tag.code.python.open.exp" },
+						"2": { "name": "string.tag.code.python.args.exp" }
+					},
+					"endCaptures": {
+						"0": { "name": "keyword.control.tag.code.python.close.exp" }
+					},
+					"name": "meta.embedded.block.python",
+					"patterns": [{ "include": "source.python" }]
+				},
+				{
+					"begin": "(\\[\\+code\\])(\\(.*lang: (js|html).*\\))",
+					"end": "\\[\\-code\\]",
+					"beginCaptures": {
+						"1": { "name": "keyword.control.tag.code.js.open.exp" },
+						"2": { "name": "string.tag.code.js.args.exp" }
+					},
+					"endCaptures": {
+						"0": { "name": "keyword.control.tag.code.js.close.exp" }
+					},
+					"name": "meta.embedded.block.js",
+					"patterns": [{ "include": "source.js" }]
+				},
+				{
+					"begin": "(\\[\\+code\\])(\\(.*lang: json.*\\))",
+					"end": "\\[\\-code\\]",
+					"beginCaptures": {
+						"1": { "name": "keyword.control.tag.code.json.open.exp" },
+						"2": { "name": "string.tag.code.json.args.exp" }
+					},
+					"endCaptures": {
+						"0": { "name": "keyword.control.tag.code.json.close.exp" }
+					},
+					"name": "meta.embedded.block.json",
+					"patterns": [{ "include": "source.json" }]
+				},
+				{
+					"begin": "(\\[\\+code\\])(\\(.*lang: bash.*\\))",
+					"end": "\\[\\-code\\]",
+					"beginCaptures": {
+						"1": { "name": "keyword.control.tag.code.shell.open.exp" },
+						"2": { "name": "string.tag.code.shell.args.exp" }
+					},
+					"endCaptures": {
+						"0": { "name": "keyword.control.tag.code.shell.close.exp" }
+					},
+					"name": "meta.embedded.block.shell",
+					"patterns": [{ "include": "source.shell" }]
+				},
+				{
+					"begin": "\\[\\+table\\]",
+					"end": "\\[\\-table\\]",
+					"beginCaptures": {
+						"0": { "name": "keyword.control.tag.table.open.exp" }
+					},
+					"endCaptures": {
+						"0": { "name": "keyword.control.tag.table.close.exp" }
+					},
+					"name": "tag.table.exp",
+          "patterns": [{ "include": "source.exp" }]
+				}
+			]
+		},
+		"html": {
+			"patterns": [
+				{
+					"begin": "<table(?:(?!>).)*(?<=\\S)>",
+					"end": "<\\/table>",
+					"beginCaptures": {
+						"0": { "name": "string.html.table.open.exp" }
+					},
+					"endCaptures": {
+						"0": { "name": "string.html.table.close.exp" }
+					},
+					"name": "html.table.exp",
+          "patterns": [{ "include": "source.exp" }]
+				},
+				{
+					"begin": "<tr(?:(?!>).)*(?<=\\S)>",
+					"end": "<\\/tr>",
+					"beginCaptures": {
+						"0": { "name": "string.html.tr.open.exp" }
+					},
+					"endCaptures": {
+						"0": { "name": "string.html.tr.close.exp" }
+					},
+					"name": "html.tr.exp",
+          "patterns": [{ "include": "source.exp" }]
+				},
+				{
+					"begin": "<th(?:(?!>).)*(?<=\\S)>",
+					"end": "<\\/th>",
+					"beginCaptures": {
+						"0": { "name": "string.html.th.open.exp" }
+					},
+					"endCaptures": {
+						"0": { "name": "string.html.th.close.exp" }
+					},
+					"name": "html.th.exp",
+          "patterns": [{ "include": "source.exp" }]
+				},
+				{
+					"begin": "<td(?:(?!>).)*(?<=\\S)>",
+					"end": "<\\/td>",
+					"beginCaptures": {
+						"0": { "name": "string.html.td.open.exp" }
+					},
+					"endCaptures": {
+						"0": { "name": "string.html.td.close.exp" }
+					},
+					"name": "html.td.exp",
+          "patterns": [{ "include": "source.exp" }]
+				}
+			]
+		}
+	}
+}
