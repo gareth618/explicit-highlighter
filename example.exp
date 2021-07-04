@@ -3,15 +3,44 @@
 $$\begin{pmatrix}
   1 & 1\\
   1 & 0
-\end{pmatrix}^n$$
+\end{pmatrix}^n$$.
 
 **Lorem Ipsum** is simply ~~dummy~~ text of the printing and typesetting industry.<br>
-Lorem Ipsum has been the industry's standard dummy text ever since the ^^1500s^^, when an __unknown__ printer took a galley of type and scrambled it to make a type specimen book :party:
+Lorem Ipsum has been the industry's standard dummy text ever since the ^^1500s^^, when an __unknown__ printer took a galley of type $E = mc^2$, and scrambled [it](example.com) to make a type [specimen]()TODO book :party:
 
-[+code](lang: js, wrap: no)
-  function sum(x, y) {
-    return x + y;
-  }
-[-code]
+[+variants]
+  [+code](lang: cpp; label: C++11)
+    std::vector<std::vector<int>> mat(10, std::vector<int>(10));
+    std::cout << mat[0][0] << '\n';
+  [-code]
+  [+code](lang: cpp; label: C++17)
+    std::vector mat(10, std::vector<int>(10));
+    std::cout << mat[0][0] << '\n';
+  [-code]
+[-variants]
 
-![618px](./my-script.js)
+![](./my-script.js)
+
+![alt: poză; width: 100](./photo.png)
+
+[+list](type: bullet; space: yes)
+  [+item]item 1[-item]
+  [+item]
+    bla bla
+    bla
+
+    [+code](lang: js)
+      let x = 10;
+    [-code]
+
+    bla bla bla
+  [-item]
+  [+item]
+    item 3
+
+    [+list]
+      [+item]subitem 1[-item]
+      [+item]subitem 2[-item]
+    [-list]
+  [-item]
+[-list]

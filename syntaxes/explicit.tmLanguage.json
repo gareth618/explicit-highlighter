@@ -178,7 +178,7 @@
         },
         {
           "begin": "\\[\\+code\\](?!\\()",
-          "end": "\\[\\-code\\]",
+          "end": "\\s*\\[\\-code\\]",
           "beginCaptures": {
             "0": { "name": "keyword.control.tag.code.cpp.open.exp" }
           },
@@ -189,7 +189,7 @@
         },
         {
           "begin": "(\\[\\+code\\])(\\(.*lang: cpp.*\\))",
-          "end": "\\[\\-code\\]",
+          "end": "\\s*\\[\\-code\\]",
           "beginCaptures": {
             "1": { "name": "keyword.control.tag.code.cpp.open.exp" },
             "2": { "name": "string.tag.code.cpp.args.exp" }
@@ -202,7 +202,7 @@
         },
         {
           "begin": "(\\[\\+code\\])(\\(.*lang: c.*\\))",
-          "end": "\\[\\-code\\]",
+          "end": "\\s*\\[\\-code\\]",
           "beginCaptures": {
             "1": { "name": "keyword.control.tag.code.c.open.exp" },
             "2": { "name": "string.tag.code.c.args.exp" }
@@ -215,7 +215,7 @@
         },
         {
           "begin": "(\\[\\+code\\])(\\(.*lang: java.*\\))",
-          "end": "\\[\\-code\\]",
+          "end": "\\s*\\[\\-code\\]",
           "beginCaptures": {
             "1": { "name": "keyword.control.tag.code.java.open.exp" },
             "2": { "name": "string.tag.code.java.args.exp" }
@@ -228,7 +228,7 @@
         },
         {
           "begin": "(\\[\\+code\\])(\\(.*lang: python.*\\))",
-          "end": "\\[\\-code\\]",
+          "end": "\\s*\\[\\-code\\]",
           "beginCaptures": {
             "1": { "name": "keyword.control.tag.code.python.open.exp" },
             "2": { "name": "string.tag.code.python.args.exp" }
@@ -241,7 +241,7 @@
         },
         {
           "begin": "(\\[\\+code\\])(\\(.*lang: (js|html).*\\))",
-          "end": "\\[\\-code\\]",
+          "end": "\\s*\\[\\-code\\]",
           "beginCaptures": {
             "1": { "name": "keyword.control.tag.code.js.open.exp" },
             "2": { "name": "string.tag.code.js.args.exp" }
@@ -254,7 +254,7 @@
         },
         {
           "begin": "(\\[\\+code\\])(\\(.*lang: json.*\\))",
-          "end": "\\[\\-code\\]",
+          "end": "\\s*\\[\\-code\\]",
           "beginCaptures": {
             "1": { "name": "keyword.control.tag.code.json.open.exp" },
             "2": { "name": "string.tag.code.json.args.exp" }
@@ -267,7 +267,7 @@
         },
         {
           "begin": "(\\[\\+code\\])(\\(.*lang: bash.*\\))",
-          "end": "\\[\\-code\\]",
+          "end": "\\s*\\[\\-code\\]",
           "beginCaptures": {
             "1": { "name": "keyword.control.tag.code.shell.open.exp" },
             "2": { "name": "string.tag.code.shell.args.exp" }
