@@ -23,7 +23,7 @@ Lorem Ipsum has been the industry's standard dummy text ever since the ^^1500s^^
 
 ![alt: poză; width: 100](./photo.png)
 
-[+list](type: bullet; space: yes)
+[+list](type: **A.**; space: yes)
   [+item]item 1[-item]
   [+item]
     bla bla
@@ -44,3 +44,33 @@ Lorem Ipsum has been the industry's standard dummy text ever since the ^^1500s^^
     [-list]
   [-item]
 [-list]
+
+[+spoiler]
+  spoiler!!!
+
+  [+center]align: center[-center]
+
+  [+right]align: right[-right]
+[-spoiler]
+
+bla bla `let i = 10;` bla bla `some markdown: ``code``!` bla bla ;w(Ctrl+C) m(Cmd+C) l(Ctrl+C); bla bla ;X; bla bla :party: bla :3/5: bla bla :ena: bla bla $E = mc^2$ bla bla $\beg{$
+
+[+table]
+  <table>
+    <tr stlye="height: 50px;">
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+    </tr>
+  </table>
+[-table]
