@@ -27,7 +27,7 @@
           "patterns": [{ "include": "source.katex" }]
         },
         { "name": "comment.leafs.nwln.exp", "match": "<br>$" },
-        { "name": "support.class.leafs.link.exp", "match": "\\[.+\\]\\(.*\\.(?=[A-Za-z0-9]).*\\)(TODO)?" }
+        { "name": "support.class.leafs.link.exp", "match": "\\[(?:(?!\\]\\().)+\\]\\((?:(?! )(?!\\)).)*\\)(TODO)?" }
       ]
     },
     "spans": {
@@ -85,7 +85,7 @@
     "display": {
       "patterns": [
         { "name": "support.class.title.exp", "match": "^#{2,6} " },
-        { "name": "support.class.media.exp", "match": "^\\!\\[.+\\]\\(.*\\)$" }
+        { "name": "support.class.media.exp", "match": "^\\!\\[.*\\]\\(.*\\)$" }
       ]
     },
     "tags": {
