@@ -1,76 +1,53 @@
-## Lorem Ipsum
+TITLE: Testing Explicit Highlighter
+AUTHOR: Gareth618
+DATE: 27/08/2021
+CATEGORIES: Tests
+TAGS: explicit, syntax highlighting, vscode
+DESCRIPTION: Testing a new VSCode extension.
+
+## ?[LIS](Longest Increasing Subsequence) în $O(n^2)$
+
+>>>
+  bla bla bla **bla bla bla __bla bla bla__bla bla bla** bla bla bla ^^bla^^ bla bla bla ~~bla bla bla~~ bla bla bla :yey: bla bla bla
+  `console.log(``hello ${name}``);` bla bla bla $E = mc^2$ bla bla bla ;wl(Ctrl+C) m(CmdC); bla bla bla [bla **bla** bla](https://bla.com/)
+<<<
+
+![360](image.mp4)
+
++++ a.
+> **14 martie 1879:** S-a născut Albert Einstein.
+> **14 martie 2018:** A murit Stephen Hawking.
+> **14 martie 1994:** S-a lansat prima versiune oficială de Linux!
+---
+
+===
 
 $$\begin{pmatrix}
-  1 & 1\\
-  1 & 0
-\end{pmatrix}^n$$.
+  1 & 2\\
+  3 & 4
+\end{pmatrix}$$
 
-**Lorem Ipsum** is simply ~~dummy~~ text of the printing and typesetting industry.<br>
-Lorem Ipsum has been the industry's standard dummy text ever since the ^^1500s^^, when an __unknown__ printer took a galley of type $E = mc^2$, and scrambled [it](example.com) to make a type [specimen]()TODO book :party:
+???
+  C > test 1
+  C > test 2
+~~~
+  l > test 3
+  r > test 4
+!!!
 
-[+variants]
-  [+code](lang: cpp; label: C++11)
-    std::vector<std::vector<int>> mat(10, std::vector<int>(10));
-    std::cout << mat[0][0] << '\n';
-  [-code]
-  [+code](lang: cpp; label: C++17)
-    std::vector mat(10, std::vector<int>(10));
-    std::cout << mat[0][0] << '\n';
-  [-code]
-[-variants]
+``` cpp -> Hello World => C++
+  #include <iostream>
 
-![](./my-script.js)
-
-![alt: poză; width: 100](./photo.png)
-
-[+list](type: **A.**; space: yes)
-  [+item]item 1[-item]
-  [+item]
-    bla bla
-    bla
-
-    [+code](lang: js)
-      let x = 10;
-    [-code]
-
-    bla bla bla
-  [-item]
-  [+item]
-    item 3
-
-    [+list]
-      [+item]subitem 1[-item]
-      [+item]subitem 2[-item]
-    [-list]
-  [-item]
-[-list]
-
-[+spoiler]
-  spoiler!!!
-
-  [+center]align: center[-center]
-
-  [+right]align: right[-right]
-[-spoiler]
-
-bla bla `let i = 10;` bla bla `some markdown: ``code``!` bla bla ;w(Ctrl+C) m(Cmd+C) l(Ctrl+C); bla bla ;X; bla bla :party: bla :3/5: bla bla :ena: bla bla $E = mc^2$ bla bla $\beg{$
-
-[+table]
-  <table>
-    <tr stlye="height: 50px;">
-      <th>1</th>
-      <th>2</th>
-      <th>3</th>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>5</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>8</td>
-      <td>9</td>
-    </tr>
-  </table>
-[-table]
+  int main() {
+      cout << "Hello world!\n";
+      return 0;
+  }
+``` java -> Hello World => Java
+  public class HelloWorld {
+      public static void main(String[] args) {
+          System.out.println("Hello world!");
+      }
+  }
+``` javascript -> Hello World => JavaScript
+  console.log('Hello world!');
+```

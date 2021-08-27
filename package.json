@@ -1,9 +1,10 @@
 {
   "name": "explicit",
   "displayName": "Explicit",
-  "description": "Support for Explicit markup language",
-  "version": "0.0.1",
+  "description": "Support for the Explicit markup language",
+  "version": "1.0.0",
   "publisher": "Gareth618",
+  "repository": "https://github.com/Gareth618/explicit-highlighter",
   "engines": {
     "vscode": "^1.57.0"
   },
@@ -20,8 +21,7 @@
         ],
         "extensions": [
           ".exp"
-        ],
-        "configuration": "./language-configuration.json"
+        ]
       }
     ],
     "grammars": [
@@ -38,15 +38,11 @@
     "configurationDefaults": {
       "[explicit]": {
         "editor.wordWrap": "on",
-        "editor.wordBasedSuggestions": false
+        "editor.wordBasedSuggestions": false,
+        "editor.tabSize": 2,
+        "editor.renderIndentGuides": false
       }
-    },
-    "snippets": [
-      {
-        "language": "explicit",
-        "path": "./snippets.json"
-      }
-    ]
+    }
   },
   "main": "./out/extension",
   "activationEvents": [
