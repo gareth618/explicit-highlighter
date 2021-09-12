@@ -48,7 +48,8 @@
         { "name": "regexp string.regexp.meta.date.exp", "match": "^DATE: " },
         { "name": "regexp string.regexp.meta.categories.exp", "match": "^CATEGORIES: " },
         { "name": "regexp string.regexp.meta.tags.exp", "match": "^TAGS: " },
-        { "name": "regexp string.regexp.meta.description.exp", "match": "^DESCRIPTION: " }
+        { "name": "regexp string.regexp.meta.description.exp", "match": "^DESCRIPTION: " },
+        { "name": "regexp string.regexp.meta.overflow.exp", "match": "(?<=^DESCRIPTION\\: .{140})..*" }
       ]
     },
     "leafs": {
@@ -77,7 +78,7 @@
             { "include": "#spans" }
           ],
           "begin": "\\[",
-          "end": "(\\]\\()((?:(?![\\[\\]]).)*)(\\))((TODO)?)",
+          "end": "(\\]\\()((?:(?![\\[\\]]).)*?)(\\))((TODO)?)",
           "beginCaptures": {
             "0": { "name": "support.class.leafs.link.open.exp" }
           },
@@ -95,7 +96,7 @@
             { "include": "#spans" }
           ],
           "begin": "\\?\\[",
-          "end": "(\\]\\()((?:(?![\\[\\]\\(\\)]).)+)(\\))",
+          "end": "(\\]\\()((?:(?![\\[\\]\\(\\)]).)+?)(\\))",
           "beginCaptures": {
             "0": { "name": "support.class.leafs.abbr.open.exp" }
           },
