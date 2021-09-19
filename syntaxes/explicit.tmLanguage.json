@@ -62,8 +62,8 @@
           "patterns": [
             { "include": "source.katex" }
           ],
-          "begin": "\\$\\$?(?=\\S)",
-          "end": "(?<=\\S)\\$?\\$",
+          "begin": "(\\$\\$|\\$(?=\\S))",
+          "end": "(\\$\\$|(?<=\\S)\\$)",
           "beginCaptures": {
             "0": { "name": "support.class.leafs.math.open.exp" }
           },
