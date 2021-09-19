@@ -77,7 +77,7 @@
             { "include": "#leafs" },
             { "include": "#spans" }
           ],
-          "begin": "\\[",
+          "begin": "\\[(?=((?!\\]).)*(\\]\\()((?:(?![\\[\\]]).)*?)(\\))((TODO)?))",
           "end": "(\\]\\()((?:(?![\\[\\]]).)*?)(\\))((TODO)?)",
           "beginCaptures": {
             "0": { "name": "support.class.leafs.link.open.exp" }
