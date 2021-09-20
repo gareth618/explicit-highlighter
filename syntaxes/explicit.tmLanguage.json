@@ -240,7 +240,7 @@
           "name": "meta.embedded.block.js",
           "patterns": [{ "include": "source.js" }],
           "begin": "^ *(?:```|\\^\\^\\^) (html|javascript)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$",
-          "end": "^ *(?:(?=(?:```|\\^\\^\\^) (html|css|javascript|json|c|cpp|java|python|bash|asm6502|text|latex|markdown)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$)|```$|\\^\\^\\^$)",
+          "end": "^ *(?:(?=(?:```|\\^\\^\\^) (html|css|javascript|json|c|cpp|java|python|bash|text|latex|markdown)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$)|```$|\\^\\^\\^$)",
           "beginCaptures": {
             "0": { "name": "keyword.control.snippet.open.exp" },
             "1": { "name": "string.snippet.lang.exp" },
@@ -255,7 +255,7 @@
           "name": "meta.embedded.block.css",
           "patterns": [{ "include": "source.css" }],
           "begin": "^ *(?:```|\\^\\^\\^) (css)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$",
-          "end": "^ *(?:(?=(?:```|\\^\\^\\^) (html|css|javascript|json|c|cpp|java|python|bash|asm6502|text|latex|markdown)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$)|```$|\\^\\^\\^$)",
+          "end": "^ *(?:(?=(?:```|\\^\\^\\^) (html|css|javascript|json|c|cpp|java|python|bash|text|latex|markdown)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$)|```$|\\^\\^\\^$)",
           "beginCaptures": {
             "0": { "name": "keyword.control.snippet.open.exp" },
             "1": { "name": "string.snippet.lang.exp" },
@@ -270,7 +270,7 @@
           "name": "meta.embedded.block.json",
           "patterns": [{ "include": "source.json" }],
           "begin": "^ *(?:```|\\^\\^\\^) (json)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$",
-          "end": "^ *(?:(?=(?:```|\\^\\^\\^) (html|css|javascript|json|c|cpp|java|python|bash|asm6502|text|latex|markdown)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$)|```$|\\^\\^\\^$)",
+          "end": "^ *(?:(?=(?:```|\\^\\^\\^) (html|css|javascript|json|c|cpp|java|python|bash|text|latex|markdown)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$)|```$|\\^\\^\\^$)",
           "beginCaptures": {
             "0": { "name": "keyword.control.snippet.open.exp" },
             "1": { "name": "string.snippet.lang.exp" },
@@ -285,7 +285,7 @@
           "name": "meta.embedded.block.c",
           "patterns": [{ "include": "source.c" }],
           "begin": "^ *(?:```|\\^\\^\\^) (c)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$",
-          "end": "^ *(?:(?=(?:```|\\^\\^\\^) (html|css|javascript|json|c|cpp|java|python|bash|asm6502|text|latex|markdown)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$)|```$|\\^\\^\\^$)",
+          "end": "^ *(?:(?=(?:```|\\^\\^\\^) (html|css|javascript|json|c|cpp|java|python|bash|text|latex|markdown)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$)|```$|\\^\\^\\^$)",
           "beginCaptures": {
             "0": { "name": "keyword.control.snippet.open.exp" },
             "1": { "name": "string.snippet.lang.exp" },
@@ -300,7 +300,7 @@
           "name": "meta.embedded.block.cpp",
           "patterns": [{ "include": "source.cpp" }],
           "begin": "^ *(?:```|\\^\\^\\^) (cpp)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$",
-          "end": "^ *(?:(?=(?:```|\\^\\^\\^) (html|css|javascript|json|c|cpp|java|python|bash|asm6502|text|latex|markdown)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$)|```$|\\^\\^\\^$)",
+          "end": "^ *(?:(?=(?:```|\\^\\^\\^) (html|css|javascript|json|c|cpp|java|python|bash|text|latex|markdown)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$)|```$|\\^\\^\\^$)",
           "beginCaptures": {
             "0": { "name": "keyword.control.snippet.open.exp" },
             "1": { "name": "string.snippet.lang.exp" },
@@ -315,7 +315,7 @@
           "name": "meta.embedded.block.java",
           "patterns": [{ "include": "source.java" }],
           "begin": "^ *(?:```|\\^\\^\\^) (java)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$",
-          "end": "^ *(?:(?=(?:```|\\^\\^\\^) (html|css|javascript|json|c|cpp|java|python|bash|asm6502|text|latex|markdown)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$)|```$|\\^\\^\\^$)",
+          "end": "^ *(?:(?=(?:```|\\^\\^\\^) (html|css|javascript|json|c|cpp|java|python|bash|text|latex|markdown)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$)|```$|\\^\\^\\^$)",
           "beginCaptures": {
             "0": { "name": "keyword.control.snippet.open.exp" },
             "1": { "name": "string.snippet.lang.exp" },
@@ -330,7 +330,7 @@
           "name": "meta.embedded.block.python",
           "patterns": [{ "include": "source.python" }],
           "begin": "^ *(?:```|\\^\\^\\^) (python)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$",
-          "end": "^ *(?:(?=(?:```|\\^\\^\\^) (html|css|javascript|json|c|cpp|java|python|bash|asm6502|text|latex|markdown)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$)|```$|\\^\\^\\^$)",
+          "end": "^ *(?:(?=(?:```|\\^\\^\\^) (html|css|javascript|json|c|cpp|java|python|bash|text|latex|markdown)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$)|```$|\\^\\^\\^$)",
           "beginCaptures": {
             "0": { "name": "keyword.control.snippet.open.exp" },
             "1": { "name": "string.snippet.lang.exp" },
@@ -345,7 +345,7 @@
           "name": "meta.embedded.block.shell",
           "patterns": [{ "include": "source.shell" }],
           "begin": "^ *(?:```|\\^\\^\\^) (bash)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$",
-          "end": "^ *(?:(?=(?:```|\\^\\^\\^) (html|css|javascript|json|c|cpp|java|python|bash|asm6502|text|latex|markdown)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$)|```$|\\^\\^\\^$)",
+          "end": "^ *(?:(?=(?:```|\\^\\^\\^) (html|css|javascript|json|c|cpp|java|python|bash|text|latex|markdown)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$)|```$|\\^\\^\\^$)",
           "beginCaptures": {
             "0": { "name": "keyword.control.snippet.open.exp" },
             "1": { "name": "string.snippet.lang.exp" },
@@ -360,7 +360,7 @@
           "name": "meta.embedded.block.katex",
           "patterns": [{ "include": "source.katex" }],
           "begin": "^ *(?:```|\\^\\^\\^) (latex)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$",
-          "end": "^ *(?:(?=(?:```|\\^\\^\\^) (html|css|javascript|json|c|cpp|java|python|bash|asm6502|text|latex|markdown)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$)|```$|\\^\\^\\^$)",
+          "end": "^ *(?:(?=(?:```|\\^\\^\\^) (html|css|javascript|json|c|cpp|java|python|bash|text|latex|markdown)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$)|```$|\\^\\^\\^$)",
           "beginCaptures": {
             "0": { "name": "keyword.control.snippet.open.exp" },
             "1": { "name": "string.snippet.lang.exp" },
@@ -374,8 +374,8 @@
         {
           "name": "snippet.exp",
           "patterns": [{ "include": "#snippet-helpers" }],
-          "begin": "^ *(?:```|\\^\\^\\^) (asm6502|text|markdown)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$",
-          "end": "^ *(?:(?=(?:```|\\^\\^\\^) (html|css|javascript|json|c|cpp|java|python|bash|asm6502|text|latex|markdown)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$)|```$|\\^\\^\\^$)",
+          "begin": "^ *(?:```|\\^\\^\\^) (text|markdown)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$",
+          "end": "^ *(?:(?=(?:```|\\^\\^\\^) (html|css|javascript|json|c|cpp|java|python|bash|text|latex|markdown)(?: -> ((?![=>])\\S(?:(?:(?![=>]).)*(?![=>])\\S)?))?(?: => (\\S(?:.*\\S)?))?$)|```$|\\^\\^\\^$)",
           "beginCaptures": {
             "0": { "name": "keyword.control.snippet.open.exp" },
             "1": { "name": "string.snippet.lang.exp" },
