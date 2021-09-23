@@ -1,0 +1,16 @@
+{
+  "metadata": {
+		"prefix": "metadata",
+		"body": [
+			"TITLE: $1",
+			"AUTHOR: $2",
+			"DATE: $3",
+			"CATEGORIES: $4",
+			"TAGS: $5",
+			"DESCRIPTION: $6",
+			"",
+			"$0"
+		],
+		"description": "Metadata Snippet"
+	}
+}
