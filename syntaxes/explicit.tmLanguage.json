@@ -176,7 +176,7 @@
             { "include": "#tables" },
             { "include": "#snippets" }
           ],
-          "begin": "^ *(>>>)( center| right)?$",
+          "begin": "^ *(>>>)( center| right| header)?$",
           "end": "^ *<<<$",
           "beginCaptures": {
             "1": { "name": "keyword.control.block.open.exp" },
