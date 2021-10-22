@@ -1,7 +1,7 @@
 {
   "name": "explicit",
   "displayName": "Explicit",
-  "icon": "https://www.shareicon.net/data/256x256/2016/10/20/846453_blue_512x512.png",
+  "icon": "icon.png",
   "description": "Support for the Explicit markup language",
   "version": "1.3.0",
   "publisher": "Gareth618",
