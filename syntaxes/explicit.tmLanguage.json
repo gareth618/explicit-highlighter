@@ -54,9 +54,9 @@
     },
     "leafs": {
       "patterns": [
-        { "name": "support.class.leafs.code.exp", "match": "(^`|(?<=[\\s(\\[{`])`)((?![`]).)+`(?=[\\s)\\]}`.?!,;:*_~^-])" },
-        { "name": "support.class.leafs.kbrd.exp", "match": "(^;|(?<=[\\s(\\[{]);)((?![`$;]).)+;(?=[\\s)\\]}.?!,;:*_~^-])" },
-        { "name": "support.class.leafs.emoj.exp", "match": "(^:|(?<=[\\s(\\[{]):)(yey|lol|hehe|haha|wink|love|cool|smirk|tongue|sad|cry|wow|smile|tractor|think|party|golden|silver|bronze|farmer|1/5|2/5|3/5|4/5|5/5):(?=[\\s)\\]}.?!,;:*_~^-])" },
+        { "name": "support.class.leafs.code.exp", "match": "(^`|(?<=[\\s(\\[{`/])`)((?![`]).)+`(?=[/\\s)\\]}`.?!,;:*_~^-])" },
+        { "name": "support.class.leafs.kbrd.exp", "match": "(^;|(?<=[\\s(\\[{/]);)((?![`$;]).)+;(?=[/\\s)\\]}.?!,;:*_~^-])" },
+        { "name": "support.class.leafs.emoj.exp", "match": "(^:|(?<=[\\s(\\[{/]):)(yey|lol|hehe|haha|wink|love|cool|smirk|tongue|sad|cry|wow|smile|tractor|think|party|golden|silver|bronze|farmer|1/5|2/5|3/5|4/5|5/5):(?=[/\\s)\\]}.?!,;:*_~^-])" },
         {
           "name": "leafs.math.exp",
           "patterns": [
