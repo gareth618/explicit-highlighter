@@ -43,13 +43,13 @@
     },
     "meta": {
       "patterns": [
-        { "name": "regexp string.regexp.meta.title.exp", "match": "^TITLE: " },
-        { "name": "regexp string.regexp.meta.author.exp", "match": "^AUTHOR: " },
-        { "name": "regexp string.regexp.meta.date.exp", "match": "^DATE: " },
-        { "name": "regexp string.regexp.meta.categories.exp", "match": "^CATEGORIES: " },
-        { "name": "regexp string.regexp.meta.tags.exp", "match": "^TAGS: " },
-        { "name": "regexp string.regexp.meta.description.exp", "match": "^DESCRIPTION: " },
-        { "name": "regexp string.regexp.meta.overflow.exp", "match": "(?<=^DESCRIPTION\\: .{140})..*" }
+        { "name": "string.regexp.meta.title.exp", "match": "^TITLE: " },
+        { "name": "string.regexp.meta.author.exp", "match": "^AUTHOR: " },
+        { "name": "string.regexp.meta.date.exp", "match": "^DATE: " },
+        { "name": "string.regexp.meta.categories.exp", "match": "^CATEGORIES: " },
+        { "name": "string.regexp.meta.tags.exp", "match": "^TAGS: " },
+        { "name": "string.regexp.meta.description.exp", "match": "^DESCRIPTION: " },
+        { "name": "string.regexp.meta.overflow.exp", "match": "(?<=^DESCRIPTION\\: .{140})..*" }
       ]
     },
     "leafs": {
