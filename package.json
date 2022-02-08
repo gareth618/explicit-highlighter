@@ -3,7 +3,7 @@
   "displayName": "Explicit",
   "icon": "icon.png",
   "description": "Support for the Explicit markup language",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "publisher": "Gareth618",
   "repository": "https://github.com/Gareth618/explicit-highlighter",
   "engines": {
